@@ -1,0 +1,55 @@
+.header
+{
+    height: 156px;
+    background: #5CA5A5 url('../../assets/images/bg-header-desktop.svg') no-repeat;
+    background-position: center;
+}
+
+.header-container
+{
+    height: 100%;
+    position: relative;
+}
+
+.searchbar
+{
+    margin: 0;
+    position: absolute;
+    bottom: -35px;
+    font-size: 18px !important;
+    line-height: 24px !important;
+    font-weight: 700 !important;
+    padding:24px 40px !important;
+    border: none !important;
+    background: #FFFFFF !important;
+    box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15) !important;
+    border-radius: 5px !important;
+}
+
+.search-btn
+{
+    position:absolute !important;
+    right: 24px !important;
+    line-height: 24px !important;
+    bottom: -18px !important;
+    font-weight: 700 !important;
+    display: inline-block !important;
+    color: #C5C5C5 !important;
+    cursor: pointer !important;
+    border: none !important;
+    background: none !important;
+
+    &:hover
+    {
+        color:#5CA5A5 !important;
+    }
+
+    &:focus{
+        outline: none !important;
+    }
+
+    &:active{
+        outline: none !important;
+    }
+}
+
