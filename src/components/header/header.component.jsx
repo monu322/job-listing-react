@@ -8,7 +8,6 @@ import { SearchTagsContext } from "../../contexts/searchTagsContext";
 
 function Header(props) {
 
-    const [search, setSearch] = useState(``);
     const searchBtn = useRef(null);
 
     const { searchTags, setSearchTags } = useContext(SearchTagsContext);
