@@ -2,7 +2,7 @@ import React, {useContext, useEffect, useState} from "react";
 
 import './content.styles.scss';
 
-import {Container, Row, Col} from 'react-bootstrap';
+import {Container} from 'react-bootstrap';
 
 import Listing from '../listing/listing.component';
 import Tags from "../tags/tags.component";
