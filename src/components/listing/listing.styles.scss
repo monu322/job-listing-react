@@ -151,18 +151,18 @@
     }   
 }
 
-/* Extra large devices (large desktops, 1100px and down)*/
+/* Medium size devices (1100px and down)*/
 @media (max-width: 1100px) 
 {
     //custom grid widths to match design
     .thumpnail-col
     {
-        max-width: 15% !important;
+        max-width: 14% !important;
     }
 
     .info-col-parent
     {
-        max-width: 85% !important;
+        max-width: 86% !important;
     }
 
     .info-col, .job-tags-col
@@ -175,6 +175,20 @@
     {
         margin-top: 20px !important;
         justify-content: left !important;
+    }
+}
+
+@media (max-width: 950px) /*950px and down*/
+{
+    //custom grid widths to match design
+    .thumpnail-col
+    {
+        max-width: 16% !important;
+    }
+
+    .info-col-parent
+    {
+        max-width: 84% !important;
     }
 }
 
@@ -198,5 +212,13 @@
     {
         max-width: 100% !important;
         width: 100% !important;
+    }
+
+    .thumpnail
+    {
+        width:60px;
+        height: 60px;
+        border-radius: 50%;
+        background-size: 60px;
     }
 } 
