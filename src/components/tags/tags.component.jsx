@@ -14,6 +14,10 @@ function Tags(props) {
         setSearchTags(searchTags.filter(li => li !== item));
     };
 
+    const clearAllTags = ()=>{
+        setSearchTags([]);
+    }
+
 
     return (
         <div className="tags-box">
@@ -27,7 +31,10 @@ function Tags(props) {
                         ))
                     }
 
-                </Col>
+                    {searchTags.length>1?<span onClick={()=>clearAllTags()} className="clr-link">Clear all</span>:''}
+
+                </Col>      
+
             </Row>
         </div>
     )

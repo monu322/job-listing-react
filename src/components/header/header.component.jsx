@@ -20,6 +20,21 @@ function Header(props) {
 
         searchBtn.current.blur();//overriding button active state styling
         e.target.reset();
+        searchBtn.current.classList.remove("active");
+    };
+
+    const toggleBtn = e => {
+        const query = e.target.value;
+        
+        if (query!=='')
+        {
+            searchBtn.current.classList.add("active");
+        }
+        else
+        {
+            searchBtn.current.classList.remove("active");
+        }
+        
     };
 
     return (
@@ -29,7 +44,7 @@ function Header(props) {
                 <Row>
                     <Col>
                         <Form onSubmit={e => addItem(e)}>
-                            <Form.Control name="newTag" className="searchbar" type="text" placeholder="Search" />
+                            <Form.Control name="newTag" onChange={e=>toggleBtn(e)} className="searchbar" type="text" placeholder="Search" />
 
                             <Button ref={searchBtn} type="submit" className="search-btn">Submit</Button>
                         </Form>

@@ -56,6 +56,11 @@
     &:active{
         outline: none !important;
     }
+
+    &.active
+    {
+        color:#5CA5A5 !important;
+    }
 }
 
 /* Meduium devices (767px and down)*/
